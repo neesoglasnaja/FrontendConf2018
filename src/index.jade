@@ -24,7 +24,7 @@ html(lang='ru')
         | )
       +cover('pictures/cover.jpg')
     +slide({header: "Кто я?", classes: "label-header white"})
-      ul 
+      ul
         li Глава отдела фронтенда, LOVATA
         li Full-stack MEAN разработчик
       p
@@ -32,17 +32,77 @@ html(lang='ru')
         img.logo(src="pictures/minskjs.png")
         img.logo(src="pictures/css-minsk-js.svg")
       +cover('pictures/about-cover.jpg')
-
-    // TODO: add slides
+    +slide({header: "Вернемся к динозаврам", classes: "label-header"})
+      footer
+        ul
+          li Отличие фронтенда от многих других языков программирования, но зачем нам вообще нужны все этим новомодные редакторы?
+          li Более 10 лет назад написала свою первую страничку HTML, тогда еще табличную верстку только-только начинаи переводить на блочную
+          li создание web-страниц макфедрис
+    +slide({header: "История текстовых редакторов", classes: "label-header"})
+      footer
+        ul
+          li Notepad
+          li Notepad++
+          li FrontPage
+          li Dreamweaver
+    +slide({header: "История текстовых редакторов", classes: "label-header"})
+      footer
+        ul
+          li Сегодня недостаточно уже открыть блокнот и начать писать там код
+          li Сложность проектов возрасла в сотни и тысячи раз
+    +slide({header: "Текстовые редакторы vs IDE", classes: "label-header"})
+      footer
+        ul
+          li Терминология и различие
+          li Холливары и различные языки программирования
+          li Некоторая небрежность в наименовании в рамках доклада
+    +slide({header: "Что сравниваем", classes: "label-header"})
+      ul
+        li Sublime Text 3
+        li Atom
+        li VS Code
+        li Web Storm
+    +slide({header: "VIM", classes: "label-header white"})
+      footer
+        ul
+          li Есть ли любители? (вопрос)
+          li Как выйти из VIM
+    +slide({header: "Как сравниваем: объективно", classes: "label-header"})
+      ul
+        li Дата первого релиза и частота обновлений
+        li Что поддерживает из коробки
+        li Расширяемость и кастомизируемость
+        li Мультиязычность интерфейса
+        li Лицензия
+    +slide({header: "Как сравниваем: субъективно", classes: "label-header"})
+      ul
+        li Простота начала работы
+        li Базовые технологии и/или небольшие проекты
+        li Фреймфорки и "синтаксический сахар"
+        li Работа с большими проектами
+        li Отладка, консоль, git
+        li "Киллер-фичи"
+    +slide({header: "Sublime Text 3", shout: true, classes: "label-header"})
+    +slide({header: "", classes: "label-header white"})
+    +slide({header: "", classes: "label-header white"})
+    +slide({header: "Писать код - не&nbsp;главное в&nbsp;работе программиста", shout: true, classes: ""})
+    +slide({header: "Выводы", classes: "label-header"})
+      footer
+        ul
+          li Каждый из этих редакторов хорош для своих задач
+          li Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода\
+          li Еще раз про субъективность
+          li Если сложно решиться, начните с изменения цветовой схемы/темы
+    +slide({header: "Ссылки на тему", classes: "label-header"})
 
     +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
-      p.end-link 
+      p.end-link
         a.bigger(href="http://bit.ly/MinskCSS-ETA" target="_blank") bit.ly/MinskCSS-ETA
         br
         | Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
       +cover('pictures/blur-cover.jpg')
-    
+
     .progress
     script(src='shower/shower.min.js')
