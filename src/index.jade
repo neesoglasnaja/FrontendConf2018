@@ -19,6 +19,9 @@ html(lang='ru')
     header.caption
       h1 !{title}
     +slide({name: 'cover', header: title, classes:'cover'})
+      p История одного эксперимента,
+        br
+        | или 4 недели безудержного веселья
       p Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
@@ -27,6 +30,7 @@ html(lang='ru')
       ul
         li Глава отдела фронтенда, LOVATA
         li Full-stack MEAN разработчик
+        li.next Пишу в Sublime Text
       p
         img.logo(src="pictures/minskcss.png")
         img.logo(src="pictures/minskjs.png")
@@ -35,16 +39,9 @@ html(lang='ru')
     +slide({header: "Вернемся к динозаврам", classes: "label-header"})
       footer
         ul
-          li Отличие фронтенда от многих других языков программирования, но зачем нам вообще нужны все этим новомодные редакторы?
-          li Более 10 лет назад написала свою первую страничку HTML, тогда еще табличную верстку только-только начинаи переводить на блочную
-          li создание web-страниц макфедрис
-    +slide({header: "История текстовых редакторов", classes: "label-header"})
-      footer
-        ul
-          li Notepad
-          li Notepad++
-          li FrontPage
-          li Dreamweaver
+          li Более 10 лет назад написала свою первую страничку HTML, тогда еще только-только начинали блоками верстать
+          li Отличие HTML/CSS/JS от многих других языков программирования - кроссбраузерно и кроссплатформенно
+          li Так зачем нам вообще нужны все этим новомодные редакторы?
     +slide({header: "История текстовых редакторов", classes: "label-header"})
       footer
         ul
@@ -113,7 +110,6 @@ html(lang='ru')
         li Удобство работы за рамками HTML/CSS/JS - зависит от установленных пакетов
         li Быстрая навигация между компонентами - через консоль поиска
         li Легкое форматирование кода - решается плагинами
-        li Удобное изменение строк кода в одном файле - просто огонь
         li Сохранение "проектов" и быстрое переключение между ними - да, но надо отдельно хранить файлы с настройками для проекта
     +slide({header: "Sublime Text 3: выводы", classes: "label-header"})
       ul
@@ -175,8 +171,6 @@ html(lang='ru')
       ul
         li Минусы: На очень больших проектах могут быть проблемы с производительностью при поиске
         li Все еще есть баги
-
-    +slide({header: "Писать код - не&nbsp;главное в&nbsp;работе программиста", shout: true, classes: ""})
     +slide({header: "Выводы", classes: "label-header"})
       footer
         ul
