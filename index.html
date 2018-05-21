@@ -15,7 +15,6 @@
     </header>
     <section id="cover" class="slide  cover">
       <h2>Война текстовых редакторов: блокнот vs IDE</h2>
-      <p>История одного эксперимента,<br>или 4 недели безудержного веселья</p>
       <p>Александра Шинкевич (<a href="https://twitter.com/neesoglasnaja" target="_blank">@neesoglasnaja</a>)</p><img src="pictures/cover.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header white">
@@ -27,34 +26,42 @@
       </ul>
       <p><img src="pictures/minskcss.png" class="logo"><img src="pictures/minskjs.png" class="logo"><img src="pictures/css-minsk-js.svg" class="logo"></p><img src="pictures/about-cover.jpg" class="cover"/>
     </section>
-    <section id="" class="slide  label-header-">
-      <h2>Дисклаймер</h2>
-      <p>Это только мое мнение</p>
-      <p>Про фронтенд (почти)</p>
+    <section id="" class="slide  white center"><img src="pictures/warning.png" width="150px">
+      <p>Оценки, приведенные в докладе, во многом субъективны.</p>
+      <p>Автор работает с определенным набором технологий, и обращает внимание на моменты, которые могуть быть незначительны для кого-то другого</p><img src="pictures/blur-cover.jpg" class="cover"/>
     </section>
-    <section id="" class="slide  label-header">
-      <h2>Текстовые редакторы vs IDE</h2>
-      <p>Текстовый редактор - это</p>
-      <p>IDE - это</p>
+    <section id="" class="slide  white center"><img src="pictures/warning.png" width="150px">
+      <p>Данный доклад не охватывает особенности программирования в языках, которые не относятся ко фронтенду <span class="next">(почти)</span></p><img src="pictures/blur-cover.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header-">
-      <h2>Что такое фронтенд</h2>
-      <ul>
-        <li>HTML + CSS + JS</li>
-        <li class="next">НЕТ (или да, если в 2008)</li>
-      </ul>
+      <h2>Редактор кода vs IDE</h2>
+      <div class="double">
+        <p>Редактор кода:</p>
+        <ul>
+          <li>Редактирование кода</li>
+          <li>Подсветка синтаксиса</li>
+          <li>Проверка синтаксиса</li>
+          <li>Форматирование</li>
+          <li>Автодополнение</li>
+          <li>Контекстная помощь по коду</li>
+        </ul>
+        <p>IDE:</p>
+        <ul>
+          <li>Редактор кода</li>
+        </ul>
+        <p>+</p>
+        <ul>
+          <li>"Умная" работа с синтаксисом</li>
+          <li>Срадства автоматизации</li>
+          <li>Отладчик</li>
+        </ul>
+      </div>
     </section>
     <section id="" class="slide  label-header-">
-      <h2>С чем я работаю</h2>
-      <ul>
-        <li>Разметка: HTML, Pug/Jade, JSX</li>
-        <li>Стили: CSS, SASS, Stylus, PostCSS</li>
-        <li>JavaScript: ES5, ES6+, JSON, TypeScript, Node.js</li>
-        <li>Разное: Markdown, .env, YAML, etc.</li>
-        <li>Фреймворки: AngularJS, Angular, React/Redux, Vue.js, jQuery</li>
-        <li>PHP</li>
-        <li>+ гифка про растеранность</li>
-      </ul>
+      <h2>Что такое фронтенд</h2><img src="pictures/logos/html-css-js.png" width="100%">
+      <p class="next">НЕТ (или да, если сегодня 2008)</p>
+    </section>
+    <section id="" class="slide  label-header-"><img src="pictures/tech-stack.jpg" class="cover"/><img src="pictures/logos/php.png" class="next"><img src="pictures/logos/sublime-text-full.png" class="next"><img src="pictures/confused.gif" class="next">
     </section>
     <section id="" class="slide  label-header-">
       <h2>Эксперимент</h2>
@@ -73,15 +80,6 @@
         <li>VS Code</li>
         <li>Web Storm</li>
       </ul>
-    </section>
-    <section id="" class="slide  label-header">
-      <h2>VIM</h2>
-      <footer>
-        <ul>
-          <li>Есть ли любители? (вопрос)</li>
-          <li>Как выйти из VIM</li>
-        </ul>
-      </footer>
     </section>
     <section id="" class="slide  label-header">
       <h2>Что общего</h2>
@@ -108,8 +106,8 @@
         <li>Условно-бесплатный</li>
       </ul>
     </section>
-    <section id="" class="slide  label-header">
-      <h2 class=" shout shrink">Atom = Sublime Text 3</h2>
+    <section id="" class="slide  label-header-">
+      <h2 class=" shout shrink">Atom = Sublime&nbsp;Text&nbsp;3</h2>
     </section>
     <section id="" class="slide  label-header">
       <h2>Atom</h2>
@@ -120,7 +118,7 @@
       </ul>
       <ul>
         <li>Всего лишь блокнот</li>
-        <li>Нет встроенного менеджера пакетов</li>
+        <li>-Нет встроенного менеджера пакетов- Есть</li>
         <li>-Условно-бесплатный- Проблемы с производительностью</li>
       </ul>
     </section>
@@ -150,39 +148,150 @@
         <li>Цена</li>
       </ul>
     </section>
+    <section id="" class="slide  label-header-">
+      <h2 class=" shout shrink">VS Code vs WebStorm</h2>
+    </section>
     <section id="" class="slide  label-header">
       <h2>Запуск</h2>
       <p>По таймеру после клика</p>
-      <ul>
-        <li>Базовый проект</li>
-        <li>Проект с зависимостями (~1000 файлов)</li>
-        <li>Мультиязычный проект (~6500 файлов, 300MB+)</li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Базовый проект</th>
+            <td>~4s</td>
+            <td>~20s</td>
+          </tr>
+          <tr>
+            <th>Проект с зависимостями (~1000 файлов)</th>
+            <td>~4s</td>
+            <td>~20s</td>
+          </tr>
+          <tr>
+            <th>Мультиязычный проект (~6500 файлов, 300MB+)</th>
+            <td>~4s</td>
+            <td>~20s</td>
+          </tr>
+          <tr>
+            <th>Поиск</th>
+            <td>~4s</td>
+            <td>~20s</td>
+          </tr>
+          <tr>
+            <th>Открытие файла извне</th>
+            <td>~</td>
+            <td>~</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
       <h2>Базовый проект</h2>
-      <p>HTML|CSS|JS</p>
-      <ul>
-        <li>Подсказки</li>
-        <li>Автокомплит</li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>HTML</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>CSS</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>JS</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Emmet</th>
+            <td>+</td>
+            <td>нет HTML</td>
+          </tr>
+          <tr>
+            <th>Formatter</th>
+            <td>нет CSS</td>
+            <td>+</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
-      <h2>Шаблонизаторы</h2>
-      <ul>
-        <li>Pug|Jade</li>
-        <li>Twig</li>
-        <li>Автокомплит</li>
-      </ul>
+      <h2>Разметка</h2>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Pug/Jade</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Pug/Jade автокомплит</th>
+            <td>+</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th>Markdown синтаксис</th>
+            <td>+</td>
+            <td>Просит плагин</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
       <h2>Препроцессоры</h2>
-      <ul>
-        <li>Sass|SCSS</li>
-        <li>Stylus</li>
-        <li>PostCSS</li>
-        <li>Комплит импортов</li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>SASS</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Less</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Stylus</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Форматирование</th>
+            <td>-</td>
+            <td>+</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
       <h2>Angular</h2>
@@ -197,51 +306,143 @@
       <h2>Vue</h2>
     </section>
     <section id="" class="slide  label-header">
-      <h2>TypeScript</h2>
+      <h2>Линтинг</h2>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Stylelint</th>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>ESLint</th>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>TSLint</th>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <th>.editorconfig</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
       <h2>Терминал</h2>
+      <thead>
+        <tr>
+          <th> </th>
+          <th>VS Code</th>
+          <th>WebStorm</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Pug/Jade</th>
+          <td>+</td>
+          <td>+</td>
+        </tr>
+      </tbody>
     </section>
     <section id="" class="slide  label-header">
       <h2>Таск-раннеры</h2>
     </section>
     <section id="" class="slide  label-header">
       <h2>Git</h2>
-    </section>
-    <section id="" class="slide  label-header">
-      <h2>Интерфейс</h2>
-    </section>
-    <section id="" class="slide  label-header">
-      <h2>Стоимость</h2>
-    </section>
-    <section id="" class="slide  label-header">
-      <h2>Переход по компонентам</h2>
-    </section>
-    <section id="" class="slide  label-header">
-      <h2>Производительность интерфейса</h2>
-    </section>
-    <section id="" class="slide  label-header">
-      <h2>Открытие файла извне</h2>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Базовая интеграция</th>
+            <td>+</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Diff</th>
+            <td>Есть плагины</td>
+            <td>+</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
       <h2>Парное программирование</h2>
     </section>
     <section id="" class="slide  label-header">
-      <h2>Баги</h2>
+      <h2>Разное</h2>
+      <table>
+        <thead>
+          <tr>
+            <th> </th>
+            <th>VS Code</th>
+            <th>WebStorm</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Цена</th>
+            <td>-</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Баги</th>
+            <td>-</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Правописание</th>
+            <td>Есть плагин</td>
+            <td>+</td>
+          </tr>
+          <tr>
+            <th>Простота интерфейса</th>
+            <td>+</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th>Частота обновление</th>
+            <td>+</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="" class="slide  label-header">
       <h2>Выводы</h2>
-      <footer>
-        <ul>
-          <li>Каждый из этих редакторов хорош для своих задач</li>
-          <li>Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода</li>
-          <li>Еще раз про субъективность</li>
-          <li>Если сложно решиться, начните с изменения цветовой схемы/темы</li>
-        </ul>
-      </footer>
+      <ul>
+        <li>Каждый из этих редакторов хорош для своих задач</li>
+        <li>Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода</li>
+        <li>Не бойтесь нового и отбросьте предрассудки в выборе инструментов</li>
+      </ul>
     </section>
     <section id="" class="slide  label-header">
       <h2>Ссылки на тему</h2>
+      <ul> 
+        <li>https://ru.wikipedia.org/wiki/Текстовый_редактор</li>
+        <li>https://ru.wikipedia.org/wiki/Интегрированная_среда_разработки</li>
+        <li>https://www.sublimetext.com/</li>
+        <li>https://atom.io/</li>
+        <li>https://code.visualstudio.com/</li>
+        <li>https://www.jetbrains.com/webstorm/</li>
+      </ul>
     </section>
     <section id="theend" class="slide  cover label-header">
       <h2 class=" shout shrink">Вопросы?</h2>

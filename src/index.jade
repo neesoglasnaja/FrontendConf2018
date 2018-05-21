@@ -19,9 +19,6 @@ html(lang='ru')
     header.caption
       h1 !{title}
     +slide({name: 'cover', header: title, classes:'cover'})
-      p История одного эксперимента,
-        br
-        | или 4 недели безудержного веселья
       p Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
@@ -36,30 +33,51 @@ html(lang='ru')
         img.logo(src="pictures/minskjs.png")
         img.logo(src="pictures/css-minsk-js.svg")
       +cover('pictures/about-cover.jpg')
-    +slide({header: "Дисклаймер", classes: "label-header-"})
-      p Это только мое мнение
-      p Про фронтенд (почти)
-    +slide({header: "Текстовые редакторы vs IDE", classes: "label-header"})
-      p Текстовый редактор - это
-      p IDE - это
+    +slide({header: "", classes: "white center"})
+      img(src="pictures/warning.png", width="150px")
+      p Оценки, приведенные в докладе, во многом субъективны.
+      p Автор работает с определенным набором технологий, и обращает внимание на моменты, которые могуть быть незначительны для кого-то другого
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "", classes: "white center"})
+      img(src="pictures/warning.png", width="150px")
+      p Данный доклад не охватывает особенности программирования в языках, которые не относятся ко фронтенду 
+        span.next (почти)
+      +cover('pictures/blur-cover.jpg')
+    +slide({header: "Редактор кода vs IDE", classes: "label-header-"})
+      div.double
+        p Редактор кода:
+        ul
+          li Редактирование кода
+          li Подсветка синтаксиса
+          li Проверка синтаксиса
+          li Форматирование
+          li Автодополнение
+          li Контекстная помощь по коду
+        p IDE:
+        ul
+          li Редактор кода
+        p +
+        ul
+          li "Умная" работа с синтаксисом
+          li Срадства автоматизации
+          li Отладчик
+    +slide({header: "Что такое фронтенд", classes: "label-header-"})
+      img(src="pictures/logos/html-css-js.png" width="100%")
+      p.next НЕТ (или да, если сегодня 2008)
+    +slide({header: "", classes: "label-header-"})
+      +cover('pictures/tech-stack.jpg')
+      img.next(src="pictures/logos/php.png")
+      img.next(src="pictures/logos/sublime-text-full.png")
+      img.next(src="pictures/confused.gif")
       //- footer
       //-   ul
-      //-     li Терминология и различие
-      //-     li Холливары и различные языки программирования
-      //-     li Некоторая небрежность в наименовании в рамках доклада
-    +slide({header: "Что такое фронтенд", classes: "label-header-"})
-      ul
-        li HTML + CSS + JS
-        li.next НЕТ (или да, если в 2008)
-    +slide({header: "С чем я работаю", classes: "label-header-"})
-      ul
-        li Разметка: HTML, Pug/Jade, JSX
-        li Стили: CSS, SASS, Stylus, PostCSS
-        li JavaScript: ES5, ES6+, JSON, TypeScript, Node.js
-        li Разное: Markdown, .env, YAML, etc.
-        li Фреймворки: AngularJS, Angular, React/Redux, Vue.js, jQuery
-        li PHP
-        li + гифка про растеранность
+      //-     li Разметка: HTML, Pug/Jade, JSX
+      //-     li Стили: CSS, SASS, Stylus, PostCSS
+      //-     li JavaScript: ES5, ES6+, JSON, TypeScript, Node.js
+      //-     li Разное: Markdown, .env, YAML, etc.
+      //-     li Фреймворки: AngularJS, Angular, React/Redux, Vue.js, jQuery
+      //-     li PHP
+      //-     li + гифка про растеранность
     +slide({header: "Эксперимент", classes: "label-header-"})
       ul
         li 4 редактора (логотипы)
@@ -86,11 +104,11 @@ html(lang='ru')
         li Atom
         li VS Code
         li Web Storm
-    +slide({header: "VIM", classes: "label-header"})
-      footer
-        ul
-          li Есть ли любители? (вопрос)
-          li Как выйти из VIM
+    //- +slide({header: "VIM", classes: "label-header"})
+    //-   footer
+    //-     ul
+    //-       li Есть ли любители? (вопрос)
+    //-       li Как выйти из VIM
     +slide({header: "Что общего", classes: "label-header"})
       ul
         li Мультиплатформенность
@@ -161,7 +179,7 @@ html(lang='ru')
     //-     li Доступно почти 7500 расширений из встроенного пакетного менеджера
     //-     li Только английский язвк интерфейса
     //-     li Бесплатный, open source
-    +slide({header: "Atom = Sublime Text 3", shout: true, classes: "label-header"})
+    +slide({header: "Atom = Sublime&nbsp;Text&nbsp;3", shout: true, classes: "label-header-"})
     +slide({header: "Atom", classes: "label-header"})
       ul
         li Начать работу очень просто
@@ -169,7 +187,7 @@ html(lang='ru')
         li Отлично подойдет для небольших базовых проектов
       ul
         li Всего лишь блокнот
-        li Нет встроенного менеджера пакетов
+        li -Нет встроенного менеджера пакетов- Есть
         li -Условно-бесплатный- Проблемы с производительностью
     //- +slide({header: "Atom != Sublime Text 3", classes: "label-header"})
     //-   ul
@@ -222,57 +240,207 @@ html(lang='ru')
         li Для простых проектов кажется overhead
         li Проблемы производительности на не очень мощных компьютерах
         li Цена
+    +slide({header: "VS Code vs WebStorm", shout: true, classes: "label-header-"})
     +slide({header: "Запуск", classes: "label-header"})
       p По таймеру после клика
-      ul
-        li Базовый проект
-        li Проект с зависимостями (~1000 файлов)
-        li Мультиязычный проект (~6500 файлов, 300MB+)
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Базовый проект
+            td ~4s
+            td ~20s
+          tr
+            th Проект с зависимостями (~1000 файлов)
+            td ~4s
+            td ~20s
+          tr
+            th Мультиязычный проект (~6500 файлов, 300MB+)
+            td ~4s
+            td ~20s
+          tr
+            th Поиск
+            td ~4s
+            td ~20s
+          tr
+            th Открытие файла извне
+            td ~
+            td ~
     +slide({header: "Базовый проект", classes: "label-header"})
-      p HTML|CSS|JS
-      ul
-        li Подсказки
-        li Автокомплит
-    +slide({header: "Шаблонизаторы", classes: "label-header"})
-      ul
-        li Pug|Jade
-        li Twig
-        li Автокомплит
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th HTML
+            td +
+            td +
+          tr
+            th CSS
+            td +
+            td +
+          tr
+            th JS
+            td +
+            td +
+          tr
+            th Emmet
+            td +
+            td нет HTML
+          tr
+            th Formatter
+            td нет CSS
+            td +
+    +slide({header: "Разметка", classes: "label-header"})
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Pug/Jade
+            td +
+            td +
+          tr
+            th Pug/Jade автокомплит
+            td +
+            td -
+          tr
+            th Markdown синтаксис
+            td +
+            td Просит плагин
     +slide({header: "Препроцессоры", classes: "label-header"})
-      ul
-        li Sass|SCSS
-        li Stylus
-        li PostCSS
-        li Комплит импортов
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th SASS
+            td +
+            td +
+          tr
+            th Less
+            td +
+            td +
+          tr
+            th Stylus
+            td +
+            td +
+          tr
+            th Форматирование
+            td -
+            td +
     +slide({header: "Angular", classes: "label-header"})
       ul
         li 
     +slide({header: "React", classes: "label-header"})
     +slide({header: "Vue", classes: "label-header"})
-    +slide({header: "TypeScript", classes: "label-header"})
+    +slide({header: "Линтинг", classes: "label-header"})
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Stylelint
+            td 
+            td 
+          tr
+            th ESLint
+            td 
+            td 
+          tr
+            th TSLint
+            td 
+            td 
+          tr
+            th .editorconfig
+            td +
+            td +
     +slide({header: "Терминал", classes: "label-header"})
+      thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Pug/Jade
+            td +
+            td +
     +slide({header: "Таск-раннеры", classes: "label-header"})
-    
     +slide({header: "Git", classes: "label-header"})
-    +slide({header: "Интерфейс", classes: "label-header"})
-    +slide({header: "Стоимость", classes: "label-header"})
-    +slide({header: "Переход по компонентам", classes: "label-header"})
-    +slide({header: "Производительность интерфейса", classes: "label-header"})
-    +slide({header: "Открытие файла извне", classes: "label-header"})
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Базовая интеграция
+            td +
+            td +
+          tr
+            th Diff
+            td Есть плагины
+            td +
     +slide({header: "Парное программирование", classes: "label-header"})
-    +slide({header: "Баги", classes: "label-header"})
-    
-    
-    
+    +slide({header: "Разное", classes: "label-header"})
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Цена
+            td -
+            td +
+          tr
+            th Баги
+            td -
+            td +
+          tr
+            th Правописание
+            td Есть плагин
+            td +
+          tr
+            th Простота интерфейса
+            td +
+            td -
+          tr
+            th Частота обновление
+            td +
+            td -
     +slide({header: "Выводы", classes: "label-header"})
-      footer
-        ul
-          li Каждый из этих редакторов хорош для своих задач
-          li Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода
-          li Еще раз про субъективность
-          li Если сложно решиться, начните с изменения цветовой схемы/темы
+      ul
+        li Каждый из этих редакторов хорош для своих задач
+        li Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода
+        li Не бойтесь нового и отбросьте предрассудки в выборе инструментов
     +slide({header: "Ссылки на тему", classes: "label-header"})
-
+      ul 
+        li https://ru.wikipedia.org/wiki/Текстовый_редактор
+        li https://ru.wikipedia.org/wiki/Интегрированная_среда_разработки
+        li https://www.sublimetext.com/
+        li https://atom.io/
+        li https://code.visualstudio.com/
+        li https://www.jetbrains.com/webstorm/
     +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
       p.end-link
         a.bigger(href="http://bit.ly/MinskCSS-ETA" target="_blank") bit.ly/MinskCSS-ETA
