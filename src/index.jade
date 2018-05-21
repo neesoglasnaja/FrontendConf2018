@@ -3,7 +3,7 @@ include ./blocks/cover.jade
 include ./blocks/quote.jade
 include ./blocks/frame.jade
 
-- var title = "Война текстовых редакторов: блокнот vs IDE"
+- var title = "Война текстовых редакторов: редактор кода vs IDE"
 
 doctype html
 html(lang='ru')
@@ -45,70 +45,88 @@ html(lang='ru')
       +cover('pictures/blur-cover.jpg')
     +slide({header: "Редактор кода vs IDE", classes: "label-header-"})
       div.double
-        p Редактор кода:
-        ul
+        p.bold Редактор кода
+        ul.next
           li Редактирование кода
           li Подсветка синтаксиса
           li Проверка синтаксиса
           li Форматирование
           li Автодополнение
           li Контекстная помощь по коду
-        p IDE:
-        ul
+        p.bold.next IDE
+        ul.next 
           li Редактор кода
-        p +
-        ul
+        p.bold.next +
+        ul.next 
           li "Умная" работа с синтаксисом
           li Срадства автоматизации
           li Отладчик
     +slide({header: "Что такое фронтенд", classes: "label-header-"})
       img(src="pictures/logos/html-css-js.png" width="100%")
-      p.next НЕТ (или да, если сегодня 2008)
+      p.next.center НЕТ
+        br
+        span.next (или да, если вы живете в 2008)
     +slide({header: "", classes: "label-header-"})
       +cover('pictures/tech-stack.jpg')
       img.next(src="pictures/logos/php.png")
-      img.next(src="pictures/logos/sublime-text-full.png")
+      img.next(src="pictures/logos/sublime-text-full.png", width="100%")
       img.next(src="pictures/confused.gif")
-      //- footer
-      //-   ul
-      //-     li Разметка: HTML, Pug/Jade, JSX
-      //-     li Стили: CSS, SASS, Stylus, PostCSS
-      //-     li JavaScript: ES5, ES6+, JSON, TypeScript, Node.js
-      //-     li Разное: Markdown, .env, YAML, etc.
-      //-     li Фреймворки: AngularJS, Angular, React/Redux, Vue.js, jQuery
-      //-     li PHP
-      //-     li + гифка про растеранность
     +slide({header: "Эксперимент", classes: "label-header-"})
       ul
-        li 4 редактора (логотипы)
+        li 4 редактора:  
+          img(src="pictures/logos/sublime-text.png", width="24px")
+          |  
+          img(src="pictures/logos/atom.png", width="24px") 
+          |  
+          img(src="pictures/logos/vs-code.png", width="24px")
+          |  
+          img(src="pictures/logos/webstorm.png", width="24px") 
         li Попробовать разные по величине и технологиям проекты
         li Сравнить субъективное ощущение от использования
         li Провести простые "синтетические" тесты производительности
-    //- +slide({header: "Еще раз обо мне", classes: "label-header-"})
-    //-   ul
-    //-     li Sublime Text
-    //- +slide({header: "Вернемся к динозаврам", classes: "label-header"})
-    //-   footer
-    //-     ul
-    //-       li Более 10 лет назад написала свою первую страничку HTML, тогда еще только-только начинали блоками верстать
-    //-       li Отличие HTML/CSS/JS от многих других языков программирования - кроссбраузерно и кроссплатформенно
-    //-       li Так зачем нам вообще нужны все этим новомодные редакторы?
-    //- +slide({header: "История текстовых редакторов", classes: "label-header"})
-    //-   footer
-    //-     ul
-    //-       li Сегодня недостаточно уже открыть блокнот и начать писать там код
-          li Сложность проектов возрасла в сотни и тысячи раз
-    +slide({header: "Что сравнивала (таблицей)", classes: "label-header"})
-      ul
-        li Sublime Text 3
-        li Atom
-        li VS Code
-        li Web Storm
-    //- +slide({header: "VIM", classes: "label-header"})
-    //-   footer
-    //-     ul
-    //-       li Есть ли любители? (вопрос)
-    //-       li Как выйти из VIM
+    +slide({header: "", classes: "label-header"})
+      table
+        thead
+          tr
+            th
+              img(src="pictures/logos/sublime-text.png", width="150px")
+            th 
+              img(src="pictures/logos/atom.png", width="150px") 
+            th 
+              img(src="pictures/logos/vs-code.png", width="150px")
+            th 
+              img(src="pictures/logos/webstorm.png", width="150px") 
+        tbody
+          tr
+            td 2008
+            td 2014
+            td 2015
+            td 2010
+          tr
+            td Очень редко
+            td ~1-3 релиза/мес.
+            td Ежемесячно
+            td ~1 релиз/мес.
+          tr
+            td Python
+            td Electron
+            td Electron
+            td Java
+          tr
+            td Английский
+            td Английский
+            td Мультиязычный
+            td Английский
+          tr
+            td Proprietary software
+            td Open Source
+            td Open Source
+            td Proprietary software
+          tr
+            td Условно-бесплатный
+            td Бесплатный
+            td Бесплатный
+            td Платный
     +slide({header: "Что общего", classes: "label-header"})
       ul
         li Мультиплатформенность
@@ -116,31 +134,6 @@ html(lang='ru')
         li Имеют системы плагинов
         li Хорошо кастомизируются: горячие клавиши, внешний вид, настройки
     +slide({header: "Отброчный тур: все против всех", shout: true, classes: "label-header-"})
-    //- +slide({header: "Как сравниваем: объективно", classes: "label-header"})
-    //-   ul
-    //-     li Дата первого релиза и частота обновлений
-    //-     li Что поддерживает из коробки
-    //-     li Расширяемость и кастомизируемость
-    //-     li Мультиязычность интерфейса
-    //-     li Лицензия
-    //- +slide({header: "Как сравниваем: субъективно", classes: "label-header"})
-    //-   ul
-    //-     li Простота начала работы
-    //-     li Базовые HTML/CSS/JS и небольшие проекты
-    //-     li Фреймфорки и "синтаксический сахар"
-    //-     li Работа с большими проектами
-    //-     li Отладка, консоль, git
-    //-     li "Киллер-фичи"
-    
-    //- +slide({header: "Sublime Text 3", shout: true, classes: "label-header"})
-    //- +slide({header: "Sublime Text 3", classes: "label-header"})
-    //-   ul
-    //-     li Первый релиз 18 января 2008
-    //-     li Релиз - 13 сентября 2017 (Dev Build - 11 ноября 2017)
-    //-     li Из коробки подсветка синтаксиса 45+ языков (включая HTML/CSS/JS)
-    //-     li Не имеет встроенного менеджера пакетов (можно поставить дополнительно, более 2500 расширений)
-    //-     li Только английский язвк интерфейса
-    //-     li Платный (единоразово $80), но можно не платить
     +slide({header: "Sublime Text 3", classes: "label-header"})
       ul
         li Начать работу очень просто
@@ -150,35 +143,6 @@ html(lang='ru')
         li Всего лишь блокнот
         li Нет встроенного менеджера пакетов
         li Условно-бесплатный
-    //-     li Для больших и сложных проектов на фреймворках многих фич будет не хватать:
-    //-       ul
-    //-         li Быстрые переходы между компонентами
-    //-         li Недостаточно умный автокомплит
-    //-     li Отладка, работа с консолью и git внутри редактора - боль
-    //- +slide({header: "Sublime Text 3", classes: "label-header"})
-    //-   ul
-    //-     li Шорткаты и подсказки - только базовые подсказки
-    //-     li Удобство работы за рамками HTML/CSS/JS - зависит от установленных пакетов
-    //-     li Быстрая навигация между компонентами - через консоль поиска
-    //-     li Легкое форматирование кода - решается плагинами
-    //-     li Сохранение "проектов" и быстрое переключение между ними - да, но надо отдельно хранить файлы с настройками для проекта
-    //- +slide({header: "Sublime Text 3: выводы", classes: "label-header"})
-    //-   ul
-    //-     li Плюсы: Очень быстрый и простой
-    //-     li Можно использовать бесплатно
-    //-     li Для небольших проектов подойдет просто отлично
-    //-   ul
-    //-     li Минусы: Для сложных проектов - есть нюансы
-    //-     li Отладка, работа с консолью и git внутри редактора - никак
-    //-     li Быстрая навигация по компонентам с помощью клика - никак
-    //- +slide({header: "Atom", shout: true, classes: "label-header"})
-    //- +slide({header: "Atom", classes: "label-header"})
-    //-   ul
-    //-     li Первый релиз 26 февраля 2014, последний - 8 марта 2018
-    //-     li Из коробки подсветка синтаксиса 35+ языков (включая HTML/CSS/JS)
-    //-     li Доступно почти 7500 расширений из встроенного пакетного менеджера
-    //-     li Только английский язвк интерфейса
-    //-     li Бесплатный, open source
     +slide({header: "Atom = Sublime&nbsp;Text&nbsp;3", shout: true, classes: "label-header-"})
     +slide({header: "Atom", classes: "label-header"})
       ul
@@ -189,46 +153,13 @@ html(lang='ru')
         li Всего лишь блокнот
         li -Нет встроенного менеджера пакетов- Есть
         li -Условно-бесплатный- Проблемы с производительностью
-    //- +slide({header: "Atom != Sublime Text 3", classes: "label-header"})
-    //-   ul
-    //-     li Из-за особенности платформы иногда более медленный
-    //-     li Кажется немного более умным, чем Sublime Text 3
-    //-     li Есть баги при работе в текстом в одном файле
-    //- +slide({header: "Atom: выводы", classes: "label-header"})
-    //-   ul
-    //-     li Плюсы: Развивающийся open source
-    //-     li Для небольших проектов подойдет просто отлично
-    //-   ul
-    //-     li Минусы: Для сложных проектов - есть нюансы
-    //-     li Отладка - все еще почти никак
-    //-     li Работа с консолью внутри редактора - есть пакеты
-    //-     li Git - встроенная поддержка
-    //-     li Быстрая навигация по компонентам с помощью клика - пакетом
-    //- +slide({header: "Visual Studio Code", shout: true, classes: "label-header"})
-    //- +slide({header: "Visual Studio Code", classes: "label-header"})
-    //-   ul
-    //-     li Первый релиз 29 апреля 2015
-    //-     li Ежемесячные апдейты
-    //-     li Из коробки подсветка синтаксиса 30+ языков (включая HTML/CSS/JS)
-    //-     li "Умное" автодополнение для основных фронтендовых технологий
-    //-     li Почти 6000 расширений
-    //-     li Мультиязычность интерфейса
-    //-     li Бесплатный
-    //- +slide({header: "Visual Studio Code", classes: "label-header"})
-    //-   ul
-    //-     li Начать работу все еще просто
-    //-     li Кажется более легкий и быстрый, чем Atom
-    //-     li Отлично подойдет для небольших базовых проектов
-    //-     li Под проекты на TypeScript - просто отлично из коробки
-    //-     li Под сложные проекты в целом неплохо, но надо устанавливать плагины
-    //-     li Есть встроенная отладка для Node.js приложения, работа с терминалом и git внутри редактора
     +slide({header: "Visual Studio Code: выводы", classes: "label-header"})
       ul
         li Подойдет под проекты практически любой сложности; для некоторых технологий есть много встроенных бонусов
         li Встроенная отладка Node.js, терминал и git внутри редактора
         li Поддержка IteliSence
       ul
-        li Минусы: На очень больших проектах могут быть проблемы с производительностью при поиске
+        li На очень больших проектах могут быть проблемы с производительностью при поиске
         li Все еще есть баги
     +slide({header: "Web Storm", classes: "label-header"})
       ul
@@ -242,7 +173,6 @@ html(lang='ru')
         li Цена
     +slide({header: "VS Code vs WebStorm", shout: true, classes: "label-header-"})
     +slide({header: "Запуск", classes: "label-header"})
-      p По таймеру после клика
       table
         thead
           tr
@@ -256,20 +186,21 @@ html(lang='ru')
             td ~20s
           tr
             th Проект с зависимостями (~1000 файлов)
-            td ~4s
-            td ~20s
+            td ~
+            td ~
           tr
             th Мультиязычный проект (~6500 файлов, 300MB+)
-            td ~4s
-            td ~20s
+            td ~
+            td ~
           tr
             th Поиск
-            td ~4s
-            td ~20s
+            td ~
+            td ~
           tr
             th Открытие файла извне
             td ~
             td ~
+      p 0 / 5
     +slide({header: "Базовый проект", classes: "label-header"})
       table
         thead
@@ -298,6 +229,7 @@ html(lang='ru')
             th Formatter
             td нет CSS
             td +
+      p 5 / 0  + 4 / 4 = 9 / 4
     +slide({header: "Разметка", classes: "label-header"})
       table
         thead
@@ -318,6 +250,7 @@ html(lang='ru')
             th Markdown синтаксис
             td +
             td Просит плагин
+      p 9 / 4  + 3 / 1 = 12 / 5
     +slide({header: "Препроцессоры", classes: "label-header"})
       table
         thead
@@ -342,9 +275,28 @@ html(lang='ru')
             th Форматирование
             td -
             td +
+      p 12 / 5  + 3 / 4 = 15 / 9
     +slide({header: "Angular", classes: "label-header"})
-      ul
-        li 
+      table
+        thead
+          tr
+            th 
+            th VS Code
+            th WebStorm
+        tbody
+          tr
+            th Angular (TypeScript)
+            td +
+            td +
+          tr
+            th Автоимпорт
+            td +
+            td +
+          tr
+            th Переход по компонентам
+            td +
+            td +
+      p 15 / 9  + 3 / 3 = 18 / 12
     +slide({header: "React", classes: "label-header"})
     +slide({header: "Vue", classes: "label-header"})
     +slide({header: "Линтинг", classes: "label-header"})
@@ -365,24 +317,36 @@ html(lang='ru')
             td 
           tr
             th TSLint
-            td 
-            td 
+            td Есть плагин
+            td +
           tr
             th .editorconfig
             td +
             td +
-    +slide({header: "Терминал", classes: "label-header"})
-      thead
+    +slide({header: "Терминал, таски, дебаггинг", classes: "label-header"})
+      table
+        thead
           tr
             th 
             th VS Code
             th WebStorm
         tbody
           tr
-            th Pug/Jade
+            th Интеграция с консолью
             td +
             td +
-    +slide({header: "Таск-раннеры", classes: "label-header"})
+          tr
+            th Таск-раннер
+            td +
+            td +
+          tr
+            th Инструменты для дебага
+            td +
+            td +
+          tr
+            th Live Share
+            td +
+            td -
     +slide({header: "Git", classes: "label-header"})
       table
         thead
@@ -399,7 +363,6 @@ html(lang='ru')
             th Diff
             td Есть плагины
             td +
-    +slide({header: "Парное программирование", classes: "label-header"})
     +slide({header: "Разное", classes: "label-header"})
       table
         thead
@@ -410,8 +373,8 @@ html(lang='ru')
         tbody
           tr
             th Цена
-            td -
             td +
+            td -
           tr
             th Баги
             td -
@@ -430,9 +393,12 @@ html(lang='ru')
             td -
     +slide({header: "Выводы", classes: "label-header"})
       ul
-        li Каждый из этих редакторов хорош для своих задач
+        li Каждый из редакторов хорош для своих задач
         li Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода
-        li Не бойтесь нового и отбросьте предрассудки в выборе инструментов
+        li Отбросьте предрассудки в выборе инструментов
+        li Не бойтесь пробовать новое и искать лучшее
+    +slide({header: "", classes: "label-header"})
+      img(src="pictures/logos/vs-code.png", width="300px")
     +slide({header: "Ссылки на тему", classes: "label-header"})
       ul 
         li https://ru.wikipedia.org/wiki/Текстовый_редактор

@@ -199,3 +199,6 @@ figcaption {
 .opacity-0 {
   opacity: 0;
 }
+.bold {
+  font-weight: bold;
+}
