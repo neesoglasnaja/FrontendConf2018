@@ -60,7 +60,61 @@ iframe
 .logo
     width 150px
     background-color: #fff
-    padding: 10px
     margin-top: 50px
     & + &
         margin-left 50px
+    &.css-m-js
+        padding: 22.15px 10px
+        background-color: #2B2727
+
+.compare-table
+    table-layout:fixed;
+    th
+    td
+        width: 15%
+        &:first-child
+            width: 24%
+        &:last-child
+            width: 17%
+    th
+        padding-bottom: 20px
+
+
+.logo-img
+    position: absolute
+    top: 30%;
+    right: 10%;
+    &.php
+        top: auto;
+        bottom: 7%
+        right: 0
+    &.sublime-full
+        position: absolute
+        top: 30%
+        left: 0;
+        width: 100%
+
+th
+    &.condition
+        width: 55%;
+    &.editor
+    &.editor2
+        position: relative
+    &.editor
+        width: 20%;
+    &.editor2
+        width: 25%;
+    .table-logo
+        position: absolute
+        left: -38px
+        top: 10px
+
+
+.slide ul.plus>li:lang(ru)::before
+    content: '+'
+.slide ul.minus>li:lang(ru)::before
+    content: '-'
+
+
+.gray
+    color: gray
