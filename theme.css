@@ -37,6 +37,15 @@
   font-size: 120%;
   font-weight: normal;
 }
+.slide a {
+  color: #008000;
+}
+.slide a.bottom {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  margin-left: -100px;
+}
 .html {
   color: #666;
 }
