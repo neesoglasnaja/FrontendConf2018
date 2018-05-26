@@ -107,9 +107,13 @@ iframe {
   top: 30%;
   left: 0;
   width: 100%;
+  opacity: 0.9;
 }
 .logo-img.winner {
   top: 10%;
+}
+.logo-img.winner2 {
+  top: 15%;
 }
 th.condition {
   width: 50%;
