@@ -43,25 +43,25 @@ html(lang='ru')
       p Данный доклад не охватывает особенности программирования в языках, которые не относятся ко фронтенду 
         span.next (почти)
       +cover('pictures/blur-cover.jpg')
-    +slide({header: "Редактор кода vs IDE", classes: "label-header-"})
-      div.double
-        p.bold Редактор кода
-        ul.next
-          li Редактирование кода
-          li Подсветка синтаксиса
-          li Проверка синтаксиса
-          li Форматирование
-          li Автодополнение
-          li Контекстная помощь по коду
-        p.bold.next IDE
-        ul.next 
-          li Редактор кода
-        p.bold.next +
-        ul.next 
-          li "Умная" работа с синтаксисом
-          li Срадства автоматизации
-          li Отладчик
-    +slide({header: "Что такое фронтенд", classes: "label-header-"})
+    +slide({header: "Редактор кода", classes: "label-header white"})
+      ul
+        li.next Редактирование кода
+        li.next Подсветка синтаксиса
+        li.next Проверка синтаксиса
+        li.next Форматирование
+        li.next Автодополнение
+        li.next Контекстная помощь по коду
+      +cover('pictures/text-editor-bg.jpg')
+    +slide({header: "IDE", classes: "label-header right white"})
+      ul.next 
+        li Редактор кода
+      p.bold.next +
+      ul
+        li.next "Умная" работа с синтаксисом
+        li.next Средства автоматизации
+        li.next Отладчик
+      +cover('pictures/ide-bg.jpg')
+    +slide({header: "Что такое фронтенд", classes: "label-header"})
       img(src="pictures/logos/html-css-js.png" width="100%")
       p.next.center НЕТ
         br
@@ -71,19 +71,13 @@ html(lang='ru')
       img.next(src="pictures/logos/php.png")
       img.next(src="pictures/logos/sublime-text-full.png", width="100%")
       img.next(src="pictures/confused.gif")
-    +slide({header: "Эксперимент", classes: "label-header-"})
+    +slide({header: "Эксперимент", classes: "label-header white"})
       ul
-        li 4 редактора:  
-          img(src="pictures/logos/sublime-text.png", width="24px")
-          |  
-          img(src="pictures/logos/atom.png", width="24px") 
-          |  
-          img(src="pictures/logos/vs-code.png", width="24px")
-          |  
-          img(src="pictures/logos/webstorm.png", width="24px") 
-        li Попробовать разные по величине и технологиям проекты
-        li Сравнить субъективное ощущение от использования
-        li Провести простые "синтетические" тесты производительности
+        li 4 редактора
+        li Разные по величине и технологиям проекты
+        li Сравнить возможности
+        li "Синтетические" тесты производительности
+      +cover('pictures/experiment-bg.jpg')
     +slide({header: "", classes: "label-header"})
       table
         thead
@@ -127,23 +121,29 @@ html(lang='ru')
             td Бесплатный
             td Бесплатный
             td Платный
-    +slide({header: "Что общего", classes: "label-header"})
+    +slide({header: "Что общего", classes: "label-header white"})
       ul
-        li Мультиплатформенность
-        li Поддерживают HTML/CSS/JS "из коробки"
-        li Имеют системы плагинов
-        li Хорошо кастомизируются: горячие клавиши, внешний вид, настройки
+        li.next Мультиплатформенность
+        li.next Поддерживают HTML/CSS/JS "из коробки"
+        li.next Имеют системы плагинов
+        li.next Хорошо кастомизируются:
+          br
+          | горячие клавиши, внешний вид, настройки
+      +cover('pictures/common-bg.jpg')
     +slide({header: "Отброчный тур: все против всех", shout: true, classes: "label-header-"})
+      +cover('pictures/blur-cover.jpg')
     +slide({header: "Sublime Text 3", classes: "label-header"})
       ul
-        li Начать работу очень просто
-        li Действительно легкий и быстрый
-        li Отлично подойдет для небольших базовых проектов
+        li.next Начать работу очень просто
+        li.next Действительно легкий и быстрый
+        li.next Отлично подойдет для небольших базовых проектов
       ul
-        li Всего лишь блокнот
-        li Нет встроенного менеджера пакетов
-        li Условно-бесплатный
+        li.next Всего лишь блокнот
+        li.next Нет встроенного менеджера пакетов
+        li.next Условно-бесплатный
+      img(src="pictures/logos/sublime-text.png", width="150px")
     +slide({header: "Atom = Sublime&nbsp;Text&nbsp;3", shout: true, classes: "label-header-"})
+      +cover('pictures/equals-bg.jpg')
     +slide({header: "Atom", classes: "label-header"})
       ul
         li Начать работу очень просто
@@ -151,9 +151,15 @@ html(lang='ru')
         li Отлично подойдет для небольших базовых проектов
       ul
         li Всего лишь блокнот
-        li -Нет встроенного менеджера пакетов- Есть
-        li -Условно-бесплатный- Проблемы с производительностью
-    +slide({header: "Visual Studio Code: выводы", classes: "label-header"})
+        li
+          span Нет встроенного менеджера пакетов 
+          span.next Есть
+        li
+          span Условно-бесплатный 
+          span.next Бесплатный
+        li.next Проблемы с производительностью
+      img(src="pictures/logos/atom.png", width="150px")
+    +slide({header: "Visual Studio Code", classes: "label-header"})
       ul
         li Подойдет под проекты практически любой сложности; для некоторых технологий есть много встроенных бонусов
         li Встроенная отладка Node.js, терминал и git внутри редактора

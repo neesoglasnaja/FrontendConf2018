@@ -1,5 +1,5 @@
 .slide::after {
-  background: #c65410;
+  background: #50891d;
   height: 75px;
 }
 .slide::before {
@@ -8,8 +8,14 @@
   right: 100px;
   height: 50px;
 }
+.slide {
+  padding-top: 75px;
+}
+.slide.right {
+  padding-left: 550px;
+}
 .slide h2 {
-  color: #742c0c;
+  color: #224526;
 }
 .slide .formula {
   font-size: 48px;
@@ -64,7 +70,7 @@
   color: #999;
 }
 .progress {
-  border-color: #c65410 rgba(0,0,0,0) #c65410 #c65410;
+  border-color: #50891d rgba(0,0,0,0) #50891d #50891d;
 }
 .tag {
   color: #ad1531;
@@ -96,7 +102,7 @@
   opacity: 0;
 }
 .slide.menu-slide .selected-item {
-  background-color: #c65410;
+  background-color: #50891d;
   display: inline-block;
 }
 .slide.menu-slide .transparent {
@@ -105,7 +111,7 @@
 .slide.label-header h2 {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #c65410;
+  background-color: #50891d;
   color: #fff;
 }
 .slide.label-header h2.shout {
@@ -144,7 +150,7 @@ figcaption {
   margin-top: 40px !important;
 }
 .label {
-  background-color: #c65410;
+  background-color: #50891d;
   color: #fff;
   padding: 0 10px;
   display: inline-block;
