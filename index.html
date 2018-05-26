@@ -138,7 +138,7 @@
         <li class="next">Хорошо кастомизируются:<br>горячие клавиши, внешний вид, настройки</li>
       </ul><img src="pictures/common-bg.jpg" class="cover"/>
     </section>
-    <section id="" class="slide  label-header-">
+    <section id="" class="slide  capture label-header">
       <h2 class=" shout shrink">Отброчный тур: все против всех</h2><img src="pictures/battle-bg.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header">
@@ -155,7 +155,7 @@
       </ul><img src="pictures/logos/sublime-text.png" width="150px" class="logo-img">
     </section>
     <section id="" class="slide  label-header-">
-      <h2 class=" shout shrink">Atom = Sublime&nbsp;Text&nbsp;3</h2><img src="pictures/equals-bg.jpg" class="cover"/>
+      <h2 class=" shout shrink">Atom<br>==<br>Sublime&nbsp;Text&nbsp;3</h2><img src="pictures/equals-bg.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header">
       <h2>Atom</h2>
@@ -174,34 +174,37 @@
     <section id="" class="slide  label-header">
       <h2>Visual Studio Code</h2>
       <ul class="plus">
-        <li>Подойдет под проекты практически любой сложности;<br>для некоторых технологий есть много встроенных бонусов</li>
-        <li>Встроенная отладка Node.js, терминал и git</li>
-        <li>Поддержка IteliSence</li>
+        <li class="next">Подойдет под проекты практически любой сложности;<br>для некоторых технологий есть много встроенных бонусов</li>
+        <li class="next">Встроенная отладка Node.js, терминал и git</li>
+        <li class="next">Поддержка IteliSence</li>
+        <li class="next">По ощущениям более производительный, чем Atom</li>
       </ul>
       <ul class="minus">
-        <li>Многие функции только через плагины</li>
-        <li>Все еще есть баги</li>
+        <li class="next">Многие функции только через плагины</li>
+        <li class="next">Все еще есть баги</li>
       </ul><img src="pictures/logos/vs-code.png" width="150px" class="logo-img">
     </section>
     <section id="" class="slide  label-header">
       <h2>Web Storm</h2>
       <ul class="plus">
-        <li>Может (почти) все "из коробки"</li>
-        <li>А что не может, есть еще доп. плагины</li>
-        <li>Быстрый производительный поиск по большим проектам</li>
+        <li class="next">Может (почти) все "из коробки"</li>
+        <li class="next">А что не может, есть еще доп. плагины</li>
+        <li class="next">Быстрый производительный поиск по большим проектам</li>
       </ul>
       <ul class="minus">
-        <li>Интерфейс кажется слишком сложным</li>
-        <li>Для простых проектов кажется overhead</li>
-        <li>Проблемы производительности на не очень мощных компьютерах</li>
-        <li>Цена</li>
+        <li class="next">Интерфейс кажется слишком сложным</li>
+        <li class="next">Для простых проектов кажется overhead</li>
+        <li class="next">Проблемы производительности на не очень мощных компьютерах</li>
+        <li class="next">Цена</li>
       </ul><img src="pictures/logos/webstorm.png" width="150px" class="logo-img">
     </section>
-    <section id="" class="slide  label-header-">
-      <h2 class=" shout shrink">VS Code vs WebStorm</h2><img src="pictures/versus-bg.jpg" class="cover"/>
+    <section id="" class="slide"><img src="pictures/go-to-ide-bg.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide  capture label-header">
+      <h2 class=" shout shrink">Visual Studio Code <span class='smallest'>vs</span> WebStorm</h2><img src="pictures/versus-bg.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header">
-      <h2>Запуск</h2>
+      <h2>Запуск и производительность</h2>
       <table>
         <thead>
           <tr>
@@ -213,32 +216,36 @@
         <tbody>
           <tr>
             <th>Базовый проект</th>
-            <td>~4s</td>
+            <td class="green">~4s</td>
             <td>~12s</td>
           </tr>
           <tr>
-            <th>Проект с зависимостями (~1000 файлов)</th>
-            <td>~6s</td>
+            <th>C зависимостями (~1000 файлов)</th>
+            <td class="green">~6s</td>
             <td>~15s</td>
           </tr>
           <tr>
-            <th>Мультиязычный проект (~6500 файлов)</th>
+            <th>Мультиязычный (~6500 файлов)</th>
+            <td class="green">~8s</td>
             <td>~16s</td>
-            <td>~8s</td>
           </tr>
           <tr>
             <th>Поиск</th>
-            <td>~2s</td>
             <td>~3s</td>
+            <td class="green">~2s</td>
           </tr>
           <tr>
             <th>Открытие файла извне</th>
-            <td>~3s</td>
+            <td class="green">~3s</td>
             <td>~12s</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+</th>
+            <th></th>
           </tr>
         </tbody>
       </table>
-      <p>4 / 1</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Базовый проект</h2>
@@ -253,32 +260,36 @@
         <tbody>
           <tr>
             <th>HTML</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>CSS</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>JS</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Emmet</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>нет HTML</td>
           </tr>
           <tr>
             <th>Formatter</th>
             <td>нет CSS</td>
-            <td>+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>++</th>
+            <th>+</th>
           </tr>
         </tbody>
       </table>
-      <p>4 / 1  + 4 / 4 = 8 / 5</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Разметка</h2>
@@ -293,22 +304,26 @@
         <tbody>
           <tr>
             <th>Pug/Jade</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Pug/Jade автокомплит</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>-</td>
           </tr>
           <tr>
             <th>Markdown синтаксис</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>Просит плагин</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+++</th>
+            <th>+</th>
           </tr>
         </tbody>
       </table>
-      <p>8 / 5  + 3 / 1 = 11 / 6</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Препроцессоры</h2>
@@ -323,27 +338,31 @@
         <tbody>
           <tr>
             <th>SASS</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Less</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Stylus</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Форматирование</th>
             <td>-</td>
-            <td>+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+++</th>
+            <th>++</th>
           </tr>
         </tbody>
       </table>
-      <p>11 / 6  + 3 / 4 = 14 / 9</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Angular</h2>
@@ -358,22 +377,26 @@
         <tbody>
           <tr>
             <th>Angular (TypeScript)</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Автоимпорт</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Переход по компонентам</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>++++</th>
+            <th>+++</th>
           </tr>
         </tbody>
       </table>
-      <p>14 / 9  + 3 / 3 = 17 / 12</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>React</h2>
@@ -388,22 +411,26 @@
         <tbody>
           <tr>
             <th>JSX</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Автоимпорт</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Переход по компонентам</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+++++</th>
+            <th>++++</th>
           </tr>
         </tbody>
       </table>
-      <p>17 / 12  + 3 / 3 = 20 / 15</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Vue</h2>
@@ -419,21 +446,25 @@
           <tr>
             <th>.vue</th>
             <td>Просит плагин</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Автоимпорт</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Переход по компонентам</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+++++</th>
+            <th>+++++</th>
           </tr>
         </tbody>
       </table>
-      <p>20 / 15  + 2 / 3 = 22 / 18</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Линтинг</h2>
@@ -449,26 +480,30 @@
           <tr>
             <th>Stylelint</th>
             <td>Есть плагин</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>ESLint</th>
             <td>Есть плагин</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>TSLint</th>
             <td>Есть плагин</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>.editorconfig</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+++++</th>
+            <th>++++++</th>
           </tr>
         </tbody>
       </table>
-      <p>22 / 18  + 1 / 4 = 23 / 22</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Терминал, таски, дебаггинг</h2>
@@ -483,32 +518,36 @@
         <tbody>
           <tr>
             <th>Интеграция с консолью</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
-            <th>Зависимости</th>
+            <th>Просит установить зависимости</th>
             <td>-</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Таск-раннер</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Инструменты для дебага</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Live Share</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>-</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>++++++</th>
+            <th>+++++++</th>
           </tr>
         </tbody>
       </table>
-      <p>23 / 22  + 4 / 4 = 27 / 26</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Git</h2>
@@ -523,17 +562,21 @@
         <tbody>
           <tr>
             <th>Базовая интеграция</th>
-            <td>+</td>
-            <td>+</td>
+            <td class="green">+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Diff</th>
             <td>Есть плагин</td>
-            <td>+</td>
+            <td class="green">+</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>++++++</th>
+            <th>++++++++</th>
           </tr>
         </tbody>
       </table>
-      <p>27 / 26  + 1 / 2 = 28 / 28</p>
     </section>
     <section id="" class="slide  label-header">
       <h2>Разное</h2>
@@ -548,43 +591,68 @@
         <tbody>
           <tr>
             <th>Цена</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>-</td>
           </tr>
           <tr>
             <th>Работа редактора без багов</th>
             <td>-</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Правописание</th>
             <td>Есть плагин</td>
-            <td>+</td>
+            <td class="green">+</td>
           </tr>
           <tr>
             <th>Простота интерфейса</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>-</td>
           </tr>
           <tr>
             <th>Частота обновления</th>
-            <td>+</td>
+            <td class="green">+</td>
             <td>-</td>
+          </tr>
+          <tr class="next">
+            <th> </th>
+            <th>+++++++ <span class="next">/ 7</span></th>
+            <th>++++++++ <span class="next">/ 8</span></th>
           </tr>
         </tbody>
       </table>
-      <p>28 / 28  + 3 / 2 = 31 / 30</p>
     </section>
-    <section id="" class="slide  label-header"><img src="pictures/logos/webstorm.png" width="200px" class="logo-img"><img src="pictures/logos/vs-code.png" width="200px" class="logo-img next"><img src="pictures/change-bg.jpg" class="cover"/>
+    <section id="" class="slide  label-header"><img src="pictures/logos/webstorm.png" width="200px" class="logo-img winner"><img src="pictures/change-bg.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header">
+      <h2>А если по-другому считать?</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="condition"> </th>
+            <th class="editor"> <img src="pictures/logos/vs-code.png" width="32px" class="table-logo"><span> VS Code</span></th>
+            <th class="editor2"><img src="pictures/logos/webstorm.png" width="32px" class="table-logo"><span> WebStorm</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Абсолютные значения</th>
+            <th>++++++++++<br>++++++++++<br>++++++++++<br>++++++++++<br>+ <span class="next">/ 31</span></th>
+            <th>++++++++++<br>++++++++++<br>++++++++++<br>++++++++++ <br><span class="next">/ 30</span></th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="" class="slide  label-header"><img src="pictures/logos/vs-code.png" width="180px" class="logo-img winner"><img src="pictures/change-bg.jpg" class="cover"/>
+    </section>
+    <section id="" class="slide  label-header white">
       <h2>Выводы</h2>
       <ul>
-        <li>Каждый из редакторов хорош для своих задач</li>
-        <li>Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода</li>
-        <li>Отбросьте предрассудки в выборе инструментов</li>
-        <li>Не бойтесь пробовать новое и искать лучшее</li>
-      </ul>
+        <li class="next">Каждый из редакторов хорош для своих задач</li>
+        <li class="next">Для написания HTML/CSS/JS не должен быть нужен<br>ни один из современных редакторов кода</li>
+        <li class="next">Отбросьте предрассудки в выборе инструментов</li>
+        <li class="next">Не бойтесь пробовать новое и искать лучшее</li>
+      </ul><img src="pictures/end-bg.jpg" class="cover"/>
     </section>
     <section id="" class="slide  label-header">
       <h2>Ссылки на тему</h2>

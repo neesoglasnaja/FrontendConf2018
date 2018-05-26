@@ -108,8 +108,11 @@ iframe {
   left: 0;
   width: 100%;
 }
+.logo-img.winner {
+  top: 10%;
+}
 th.condition {
-  width: 55%;
+  width: 50%;
 }
 th.editor,
 th.editor2 {
@@ -122,9 +125,14 @@ th.editor2 {
   width: 25%;
 }
 th .table-logo {
-  position: absolute;
-  left: -38px;
+  position: relative;
   top: 10px;
+}
+td {
+  padding: 0 10px;
+}
+td.green {
+  background-color: #cff3af !important;
 }
 .slide ul.plus>li:lang(ru)::before {
   content: '+';

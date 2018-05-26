@@ -135,7 +135,7 @@ html(lang='ru')
           br
           | горячие клавиши, внешний вид, настройки
       +cover('pictures/common-bg.jpg')
-    +slide({header: "Отброчный тур: все против всех", shout: true, classes: "label-header-"})
+    +slide({header: "Отброчный тур: все против всех", shout: true, classes: "capture label-header"})
       +cover('pictures/battle-bg.jpg')
     +slide({header: "Sublime Text 3", classes: "label-header"})
       ul.plus
@@ -147,7 +147,7 @@ html(lang='ru')
         li.next Нет встроенного менеджера пакетов
         li.next Условно-бесплатный
       img.logo-img(src="pictures/logos/sublime-text.png", width="150px")
-    +slide({header: "Atom = Sublime&nbsp;Text&nbsp;3", shout: true, classes: "label-header-"})
+    +slide({header: "Atom<br>==<br>Sublime&nbsp;Text&nbsp;3", shout: true, classes: "label-header-"})
       +cover('pictures/equals-bg.jpg')
     +slide({header: "Atom", classes: "label-header"})
       ul.plus.gray
@@ -166,29 +166,32 @@ html(lang='ru')
       img.logo-img(src="pictures/logos/atom.png", width="150px")
     +slide({header: "Visual Studio Code", classes: "label-header"})
       ul.plus
-        li Подойдет под проекты практически любой сложности;
+        li.next Подойдет под проекты практически любой сложности;
           br 
           | для некоторых технологий есть много встроенных бонусов
-        li Встроенная отладка Node.js, терминал и git
-        li Поддержка IteliSence
+        li.next Встроенная отладка Node.js, терминал и git
+        li.next Поддержка IteliSence
+        li.next По ощущениям более производительный, чем Atom
       ul.minus
-        li Многие функции только через плагины
-        li Все еще есть баги
+        li.next Многие функции только через плагины
+        li.next Все еще есть баги
       img.logo-img(src="pictures/logos/vs-code.png", width="150px")
     +slide({header: "Web Storm", classes: "label-header"})
       ul.plus
-        li Может (почти) все "из коробки"
-        li А что не может, есть еще доп. плагины
-        li Быстрый производительный поиск по большим проектам
+        li.next Может (почти) все "из коробки"
+        li.next А что не может, есть еще доп. плагины
+        li.next Быстрый производительный поиск по большим проектам
       ul.minus
-        li Интерфейс кажется слишком сложным
-        li Для простых проектов кажется overhead
-        li Проблемы производительности на не очень мощных компьютерах
-        li Цена
+        li.next Интерфейс кажется слишком сложным
+        li.next Для простых проектов кажется overhead
+        li.next Проблемы производительности на не очень мощных компьютерах
+        li.next Цена
       img.logo-img(src="pictures/logos/webstorm.png", width="150px") 
-    +slide({header: "VS Code vs WebStorm", shout: true, classes: "label-header-"})
+    +slide({header: "", shout: true})
+      +cover('pictures/go-to-ide-bg.jpg')
+    +slide({header: "Visual Studio Code <span class='smallest'>vs</span> WebStorm", shout: true, classes: "capture label-header"})
       +cover('pictures/versus-bg.jpg')
-    +slide({header: "Запуск", classes: "label-header"})
+    +slide({header: "Запуск и производительность", classes: "label-header"})
       table
         thead
           tr
@@ -202,25 +205,29 @@ html(lang='ru')
         tbody
           tr
             th Базовый проект
-            td ~4s
+            td.green ~4s
             td ~12s
           tr
-            th Проект с зависимостями (~1000 файлов)
-            td ~6s
+            th C зависимостями (~1000 файлов)
+            td.green ~6s
             td ~15s
           tr
-            th Мультиязычный проект (~6500 файлов)
+            th Мультиязычный (~6500 файлов)
+            td.green ~8s
             td ~16s
-            td ~8s
           tr
             th Поиск
-            td ~2s
             td ~3s
+            td.green ~2s
           tr
             th Открытие файла извне
-            td ~3s
+            td.green ~3s
             td ~12s
-      p 4 / 1
+          tr.next
+            th 
+            th +
+            th
+      //- p 4 / 1
     +slide({header: "Базовый проект", classes: "label-header"})
       table
         thead
@@ -235,25 +242,29 @@ html(lang='ru')
         tbody
           tr
             th HTML
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th CSS
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th JS
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Emmet
-            td +
+            td.green +
             td нет HTML
           tr
             th Formatter
             td нет CSS
-            td +
-      p 4 / 1  + 4 / 4 = 8 / 5
+            td.green +
+          tr.next
+            th 
+            th ++
+            th +
+      //- p 4 / 1 + 4 / 4 = 8 / 5
     +slide({header: "Разметка", classes: "label-header"})
       table
         thead
@@ -268,17 +279,21 @@ html(lang='ru')
         tbody
           tr
             th Pug/Jade
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Pug/Jade автокомплит
-            td +
+            td.green +
             td -
           tr
             th Markdown синтаксис
-            td +
+            td.green +
             td Просит плагин
-      p 8 / 5  + 3 / 1 = 11 / 6
+          tr.next
+            th 
+            th +++
+            th +
+      //- p 8 / 5  + 3 / 1 = 11 / 6
     +slide({header: "Препроцессоры", classes: "label-header"})
       table
         thead
@@ -293,21 +308,25 @@ html(lang='ru')
         tbody
           tr
             th SASS
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Less
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Stylus
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Форматирование
             td -
-            td +
-      p 11 / 6  + 3 / 4 = 14 / 9
+            td.green +
+          tr.next
+            th 
+            th +++
+            th ++
+      //- p 11 / 6  + 3 / 4 = 14 / 9
     +slide({header: "Angular", classes: "label-header"})
       table
         thead
@@ -322,17 +341,21 @@ html(lang='ru')
         tbody
           tr
             th Angular (TypeScript)
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Автоимпорт
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Переход по компонентам
-            td +
-            td +
-      p 14 / 9  + 3 / 3 = 17 / 12
+            td.green +
+            td.green +
+          tr.next
+            th 
+            th ++++
+            th +++
+      //- p 14 / 9  + 3 / 3 = 17 / 12
     +slide({header: "React", classes: "label-header"})
       table
         thead
@@ -347,17 +370,21 @@ html(lang='ru')
         tbody
           tr
             th JSX
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Автоимпорт
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Переход по компонентам
-            td +
-            td +
-      p 17 / 12  + 3 / 3 = 20 / 15
+            td.green +
+            td.green +
+          tr.next
+            th 
+            th +++++
+            th ++++
+      //- p 17 / 12  + 3 / 3 = 20 / 15
     +slide({header: "Vue", classes: "label-header"})
       table
         thead
@@ -373,16 +400,20 @@ html(lang='ru')
           tr
             th .vue
             td Просит плагин
-            td +
+            td.green +
           tr
             th Автоимпорт
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Переход по компонентам
-            td +
-            td +
-      p 20 / 15  + 2 / 3 = 22 / 18
+            td.green +
+            td.green +
+          tr.next
+            th 
+            th +++++
+            th +++++
+      //- p 20 / 15  + 2 / 3 = 22 / 18
     +slide({header: "Линтинг", classes: "label-header"})
       table
         thead
@@ -398,20 +429,24 @@ html(lang='ru')
           tr
             th Stylelint
             td Есть плагин
-            td +
+            td.green +
           tr
             th ESLint
             td Есть плагин
-            td +
+            td.green +
           tr
             th TSLint
             td Есть плагин
-            td +
+            td.green +
           tr
             th .editorconfig
-            td +
-            td +
-      p 22 / 18  + 1 / 4 = 23 / 22
+            td.green +
+            td.green +
+          tr.next
+            th 
+            th +++++
+            th ++++++
+      //- p 22 / 18  + 1 / 4 = 23 / 22
     +slide({header: "Терминал, таски, дебаггинг", classes: "label-header"})
       table
         thead
@@ -426,25 +461,29 @@ html(lang='ru')
         tbody
           tr
             th Интеграция с консолью
-            td +
-            td +
+            td.green +
+            td.green +
           tr
-            th Зависимости
+            th Просит установить зависимости
             td -
-            td +
+            td.green +
           tr
             th Таск-раннер
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Инструменты для дебага
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Live Share
-            td +
+            td.green +
             td -
-      p 23 / 22  + 4 / 4 = 27 / 26
+          tr.next
+            th 
+            th ++++++
+            th +++++++
+      //- p 23 / 22  + 4 / 4 = 27 / 26
     +slide({header: "Git", classes: "label-header"})
       table
         thead
@@ -459,13 +498,17 @@ html(lang='ru')
         tbody
           tr
             th Базовая интеграция
-            td +
-            td +
+            td.green +
+            td.green +
           tr
             th Diff
             td Есть плагин
-            td +
-      p 27 / 26  + 1 / 2 = 28 / 28
+            td.green +
+          tr.next
+            th 
+            th ++++++
+            th ++++++++
+      //- p 27 / 26  + 1 / 2 = 28 / 28
     +slide({header: "Разное", classes: "label-header"})
       table
         thead
@@ -480,35 +523,79 @@ html(lang='ru')
         tbody
           tr
             th Цена
-            td +
+            td.green +
             td -
           tr
             th Работа редактора без багов
             td -
-            td +
+            td.green +
           tr
             th Правописание
             td Есть плагин
-            td +
+            td.green +
           tr
             th Простота интерфейса
-            td +
+            td.green +
             td -
           tr
             th Частота обновления
-            td +
+            td.green +
             td -
-      p 28 / 28  + 3 / 2 = 31 / 30
+          tr.next
+            th 
+            th +++++++ 
+              span.next / 7
+            th ++++++++ 
+              span.next / 8
+      //- p 28 / 28  + 3 / 2 = 31 / 30
     +slide({header: "", classes: "label-header"})
-      img.logo-img(src="pictures/logos/webstorm.png", width="200px")
-      img.logo-img.next(src="pictures/logos/vs-code.png", width="200px")
+      img.logo-img.winner(src="pictures/logos/webstorm.png", width="200px")
+      +cover('pictures/change-bg.jpg')
+    +slide({header: "А если по-другому считать?", classes: "label-header"})
+      table
+        thead
+          tr
+            th.condition 
+            th.editor 
+              img.table-logo(src="pictures/logos/vs-code.png", width="32px") 
+              span  VS Code
+            th.editor2
+              img.table-logo(src="pictures/logos/webstorm.png", width="32px") 
+              span  WebStorm
+        tbody
+          tr
+            th Абсолютные значения
+            th ++++++++++
+              br
+              | ++++++++++
+              br
+              | ++++++++++
+              br
+              | ++++++++++
+              br 
+              | + 
+              span.next / 31
+            th ++++++++++
+              br
+              | ++++++++++
+              br
+              | ++++++++++
+              br
+              | ++++++++++ 
+              br
+              span.next / 30
+    +slide({header: "", classes: "label-header"})
+      img.logo-img.winner(src="pictures/logos/vs-code.png", width="180px")
       +cover('pictures/change-bg.jpg')      
-    +slide({header: "Выводы", classes: "label-header"})
+    +slide({header: "Выводы", classes: "label-header white"})
       ul
-        li Каждый из редакторов хорош для своих задач
-        li Для того, чтобы писать базовый HTML/CSS/JS вам не должен быть нужен ни один из современных редакторов кода
-        li Отбросьте предрассудки в выборе инструментов
-        li Не бойтесь пробовать новое и искать лучшее
+        li.next Каждый из редакторов хорош для своих задач
+        li.next Для написания HTML/CSS/JS не должен быть нужен
+          br
+          | ни один из современных редакторов кода
+        li.next Отбросьте предрассудки в выборе инструментов
+        li.next Не бойтесь пробовать новое и искать лучшее
+      +cover('pictures/end-bg.jpg')      
     +slide({header: "Ссылки на тему", classes: "label-header"})
       ul 
         li

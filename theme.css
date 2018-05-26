@@ -121,6 +121,9 @@
   padding-bottom: 20px;
   font-size: 120px;
 }
+.slide.capture h2.shout {
+  font-size: 64px;
+}
 .slide h2 .label {
   color: #fff;
   padding: 10px 40px;
